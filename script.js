@@ -1,5 +1,5 @@
-const apiKey = 'f91dbbe5218fb0907f3d7e758e0eb37c';
-
+require('dotenv').config();
+const apiKey = process.env.API_KEY;
 
 function getWeather(event) {
   event.preventDefault(); // prevent the form from submitting
