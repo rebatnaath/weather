@@ -10,7 +10,7 @@ function getWeather(event) {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const weather = document.getElementById('weather');
+      const weather = document.getElementById('weather-display');
       weather.innerHTML = `Current temperature in ${city}: ${data.main.temp}°C`;
     })
     .catch(error => console.error(error));
