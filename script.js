@@ -1,4 +1,5 @@
 const apiKey = 'f91dbbe5218fb0907f3d7e758e0eb37c';
+const weather = document.getElementById('weather-display');
 
 function getWeather(event) {
   event.preventDefault(); // prevent the form from submitting
